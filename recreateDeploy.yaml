@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: testdeployment
+  name: testdeployment
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: testdeployment
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: testdeployment
+    spec:
+      containers:
+      - image: httpd:alpine3.19
+        name: httpd
