@@ -2,13 +2,13 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: testdeployment
-  name: testdeployment
+    app: frontenddeployment
+  name: frontenddeployment
 spec:
-  replicas: 2
+  replicas: 10
   selector:
     matchLabels:
-      app: testdeployment
+      app: frontenddeployment
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -17,7 +17,7 @@ spec:
   template:
     metadata:
       labels:
-        app: testdeployment
+        app: frontenddeployment
     spec:
       containers:
       - image: httpd:alpine3.18

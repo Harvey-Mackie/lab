@@ -1,0 +1,127 @@
+cv:
+  name: Harvey Mackie
+  email: harveymackie@outlook.com
+  phone: "+447305988633"
+  social_networks:
+    - network: LinkedIn
+      username: harvey-mackie
+    - network: GitHub
+      username: harvey-mackie
+  sections:
+    profile:
+      - bullet: Software Engineer with over 5 years of experience, specializing delivering scalable microservice architectures. 
+      - bullet: Passionate about event-driven architecture and experienced with Kubernetes, I focus on designing solutions that are reliable and highly available. 
+      - bullet: Committed to mentoring engineers, driving continuous improvement, fostering a culture of collaboration, and implementing cutting-edge technologies to deliver impactful business solutions.
+    experience:
+      - company: Lloyds Banking Group
+        position: Software Engineer
+        location: Edinburgh, Scotland
+        start_date: 2022-12
+        end_date: present
+        highlights:
+          - Technical lead for Cash & SEPA team, ensuring successful delivery of key banking products.
+          - Architected the Travel Services solution, migrating from legacy systems to microservices, enhancing scalability and reliability.
+          - Implemented Drools to streamline business logic, improving decision-making processes.
+          - Delivered and continue to support the SEPA Payment System, enhancing transaction compliance and reliability across Europe, impacting thousands of daily transactions.
+          - Awarded "2023 Top Colleague Award" for high performance and excellence in project delivery.
+          - Implemented circuit breakers to manage API traffic during outages, boosting system stability.
+          - Mentor a junior engineer, providing ongoing technical guidance and fostering professional development within the company.
+      - company: Clearsky Logic
+        position: Software Engineer
+        location: Edinburgh, Scotland
+        start_date: 2021-01
+        end_date: 2022-12
+        highlights:
+          - Developed several web applications using C#, .NET Core, React and SQL Server.
+          - Enhanced software integration and delivery by creating CI and CD environments via Azure DevOps.
+          - Lead and successfully delivered the development phase of two client projects with a small team
+          - Resolved security vulnerabilities on client's API by implementing policy-based authorization to restrict access of certain processes to specific users.
+      - company: Clear Amber
+        position: Software Engineer
+        location: Perth, Scotland
+        start_date: 2019-04
+        end_date: 2020-04
+        highlights:
+          - Architected and implemented the system design for the client facing API gateway.
+          - Performed code reviews on developers commits before integrating with the main system, focused on ensuring excellent code quality.
+      - company: Perth & Kinross Council
+        position: Database Developer Intern
+        location: Perth, Scotland
+        start_date: 2018-06
+        end_date: 2018-09
+        highlights:
+          - Developed and implemented standard operating procedures to bridge data gaps and resolve related issues.
+          - Updated the existing infrastructure to allow for detailed filtering and searching of public transport data via stored procedures.
+    education:
+      - institution: Abertay University 
+        area: Computing
+        degree: BSc(Hons)
+        start_date: 2017-09
+        end_date: 2020-06
+        highlights:
+          - GPA - 4.35/4.5
+          - Member of the Computer Programming Society.
+          - First team player for the University Football Team; Achieved University Player of the Year 2018.
+      - institution: University of the Highlands and Islands
+        area: Computer Science
+        degree: HNC
+        start_date: 2016-09
+        end_date: 2017-06
+        highlights:
+          - GPA - 4.0/4.0
+    
+    "Personal Achievements":
+      - bullet: Awarded "2023 Top Collegue Award" by Lloyds Banking Group for high performance culture.
+      - bullet: Won the European Business Model Competition and competed in the finals in Stuttgart, Germany.
+      - bullet: Completed a marathon with a personal best time of 2 hours 47 minutes.
+      - bullet: Completed Ironman Italy in 9 hours 51 minutes.
+      - bullet: Twice won the Scottish Championship Middle Distance Triathlon in the 20-24 and 25-29 age groups.
+    
+    technologies:
+      - label: Languages
+        details: Java, C#, SQL, JavaScript
+      - label: Frameworks & Tools
+        details: Spring Boot, .NET Core, React, Drools
+      - label: Cloud & DevOps
+        details: Kubernetes, OpenShift (OCP), Docker, Azure DevOps, CI/CD pipelines
+      - label: Architectures
+        details: Microservices, Event-Driven Architecture, Kafka, API Gateway
+      - label: Infrastructure & Performance
+        details: Circuit Breakers, Caching (e.g., Redis), Load Balancing
+design:
+  theme: classic
+  font: Source Sans 3
+  font_size: 10pt
+  page_size: letterpaper
+  color: '#004d66'
+  disable_external_link_icons: false
+  disable_page_numbering: false
+  page_numbering_style: NAME - Page PAGE_NUMBER of TOTAL_PAGES
+  disable_last_updated_date: true
+  header_font_size: 30 pt
+  text_alignment: justified
+  seperator_between_connections: ''
+  use_icons_for_connections: true
+  margins:
+    page:
+      top: 2 cm
+      bottom: 2 cm
+      left: 2 cm
+      right: 2 cm
+    section_title:
+      top: 0.4 cm
+      bottom: 0.4 cm
+    entry_area:
+      left_and_right: 0.1 cm
+      vertical_between: 0.3 cm
+      date_and_location_width: 4 cm
+      education_degree_width: 2 cm
+    highlights_area:
+      top: 0.10 cm
+      left: 0.4 cm
+      vertical_between_bullet_points: 0.10 cm
+    header:
+      vertical_between_name_and_connections: 0.3 cm
+      bottom: 0.3 cm
+      horizontal_between_connections: 0.5 cm
+  show_timespan_in: []
