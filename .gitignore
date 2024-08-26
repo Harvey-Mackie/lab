@@ -1,4 +1,10 @@
 /career/cv/classic/*
 /career/cv/markdown/*
-/career/cv/rendercv_output/*
+/career/cv/rendercv_output/__pycache__/*
+/career/cv/rendercv_output/*.log
+/career/cv/rendercv_output/*.md
+/career/cv/rendercv_output/*.tex
+/career/cv/rendercv_output/*.aux
+/career/cv/rendercv_output/*.png
+/career/cv/rendercv_output/*.html
 /career/cv/venv/*
