@@ -1,0 +1,41 @@
+version: '3'
+
+services:
+  # Cloud Spanner Emulator (Database)
+  spanner-emulator:
+    image: gcr.io/cloud-spanner-emulator/emulator:latest
+    ports:
+      - "9010:9010"  # gRPC port
+      - "9020:9020"  # REST port
+    networks:
+      - gcp-network
+
+  # Cloud Storage Emulator (for File Storage)
+  storage-emulator:
+    image: oittaa/gcp-storage-emulator:latest
+    environment:
+      - PORT=9023
+    ports:
+      - "9023:9023"
+    volumes:
+      - ./storage-data:/storage
+    networks:
+      - gcp-network
+
+  # Initialize Spanner (use sdk to interact with the spanner emulators)
+  spanner-init:
+    image: google/cloud-sdk:slim
+    depends_on:
+      - spanner-emulator
+    volumes:
+      - ./scripts:/scripts
+      - ./0__lower_setup:/0__lower_setup
+    environment:
+      - SPANNER_EMULATOR_HOST=spanner-emulator:9010
+    entrypoint: ["/scripts/init-spanner.sh"]
+    networks:
+      - gcp-network
+
+networks:
+  gcp-network:
+    driver: bridge
